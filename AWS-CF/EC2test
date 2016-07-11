@@ -1,0 +1,78 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Metadata": {
+    "AWS::CloudFormation::Designer": {
+      "15c98f72-4e42-452e-ad2f-717d10be5dc8": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 360,
+          "y": 40
+        },
+        "z": 0,
+        "embeds": []
+      },
+      "b36929eb-a7b3-4d20-8739-968f4dce3e3d": {
+        "source": {
+          "id": "15c98f72-4e42-452e-ad2f-717d10be5dc8"
+        },
+        "target": {
+          "id": "bc5849c7-5403-4461-b832-f63c1e2c08f1"
+        },
+        "z": 1
+      },
+      "0a3dfe0c-cc9e-4afb-95bd-5c0febf47ebf": {
+        "source": {
+          "id": "49c74c6b-f23d-462b-b8c8-e56e89d9a9a6"
+        },
+        "target": {
+          "id": "15c98f72-4e42-452e-ad2f-717d10be5dc8"
+        },
+        "z": 2
+      },
+      "bb0dcf06-3d6a-4560-87de-2489bc2ec287": {
+        "source": {
+          "id": "f1ac333d-58e4-4cdd-8ebd-84552d876f05"
+        },
+        "target": {
+          "id": "bc5849c7-5403-4461-b832-f63c1e2c08f1"
+        },
+        "z": 3
+      },
+      "2ca1744e-ae34-4fee-8fab-b19690900fc6": {
+        "source": {
+          "id": "49c74c6b-f23d-462b-b8c8-e56e89d9a9a6"
+        },
+        "target": {
+          "id": "15c98f72-4e42-452e-ad2f-717d10be5dc8"
+        },
+        "z": 11
+      }
+    }
+  },
+  "Resources": {
+    "EC2I35KLE": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "AvailabilityZone": "us-west-2b",
+        "ImageId": "ami-3ae92a5a",
+        "InstanceInitiatedShutdownBehavior": "terminate",
+        "InstanceType": "t2.micro",
+        "KeyName": "paop-key",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "test"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "15c98f72-4e42-452e-ad2f-717d10be5dc8"
+        }
+      }
+    }
+  }
+}
